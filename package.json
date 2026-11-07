@@ -1,0 +1,21 @@
+{
+  "name": "ckey-unsafe-autoexec",
+  "version": "0.1.0",
+  "description": "Not endorsed, brokered or certified by CKey or ClearKey Solutions. Codes executed by this module are not Safe Actions. The CKey web SDK plus developer-controlled execution of verified Safe Action envelopes.",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./envelope": "./src/envelope.mjs",
+    "./autoexec": "./src/autoexec.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "engines": { "node": ">=20.16" },
+  "scripts": { "test": "node --test \"test/*.test.mjs\"" },
+  "dependencies": { "openckey": "^0.1.0-build.83" },
+  "keywords": ["ckey", "unsafe", "auto-execution"],
+  "repository": { "type": "git", "url": "git+https://github.com/clearkeysolutions/ckey-unsafe-autoexec.git" }
+}
